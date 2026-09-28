@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Socially Bloomed | Social Media & Content</title>
+<meta name="description" content="Socially Bloomed creates fresh, feminine social-media content for small businesses.">
+<style>
+:root{
+  --pink:#fddde8;
+  --pink2:#fff1f6;
+  --silver:#b8b8bd;
+  --silver-dark:#77777d;
+  --white:#fff;
+  --ink:#35353b;
+  --line:#eadfe4;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff}
+a{text-decoration:none;color:inherit}
+.nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1100px;margin:auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-family:"Brush Script MT","Segoe Script",cursive;font-size:30px;color:#c88fa5;line-height:1}
+.logo small{font-family:Arial,sans-serif;display:block;font-size:9px;letter-spacing:4px;color:var(--silver-dark);text-align:center;margin-top:-2px}
+.nav-links{display:flex;gap:22px;font-size:13px}
+.nav-links a:hover{color:#c88fa5}
+.hero{background:linear-gradient(135deg,var(--pink2),var(--pink));padding:86px 22px 76px;text-align:center}
+.hero h1{font-family:"Brush Script MT","Segoe Script",cursive;font-weight:400;font-size:76px;margin:0;color:#bf8199}
+.hero h1 span{display:block;font-family:Georgia,serif;font-size:20px;letter-spacing:8px;color:var(--ink);margin-top:-8px}
+.hero p{max-width:620px;margin:24px auto;font-size:17px;line-height:1.7}
+.btn{display:inline-block;background:#c88fa5;color:white;padding:14px 24px;border-radius:999px;font-weight:700;border:0;cursor:pointer;box-shadow:0 8px 22px rgba(180,125,150,.22)}
+.btn.alt{background:white;color:#a56e84;border:1px solid #e4c8d3;box-shadow:none}
+.section{max-width:1100px;margin:auto;padding:70px 22px}
+.section h2{text-align:center;font-family:"Brush Script MT","Segoe Script",cursive;font-size:48px;font-weight:400;color:#b97d95;margin:0 0 8px}
+.sub{text-align:center;color:#777;max-width:650px;margin:0 auto 36px;line-height:1.6}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{border:1px solid var(--line);border-radius:22px;padding:28px;background:#fff;box-shadow:0 10px 28px rgba(80,60,70,.06)}
+.card.featured{background:linear-gradient(180deg,#fff4f8,#fff);border-color:#e5bccc}
+.card h3{margin:0 0 10px;font-family:Georgia,serif}
+.price{font-size:31px;font-weight:800;color:#b77891;margin:10px 0 18px}
+.card ul{padding-left:20px;line-height:1.9;color:#666}
+.card .btn{width:100%;text-align:center;margin-top:10px}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.step{background:#fff7fa;border-radius:18px;padding:22px;text-align:center;border:1px solid #f0dfe6}
+.num{width:34px;height:34px;border-radius:50%;background:#f3c6d6;color:#8c536a;display:grid;place-items:center;margin:0 auto 12px;font-weight:800}
+.portfolio{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.mock{aspect-ratio:1/1;background:linear-gradient(135deg,#fde4ed,#fff);border:1px solid var(--line);border-radius:20px;padding:25px;display:flex;flex-direction:column;justify-content:space-between}
+.mock strong{font-family:"Brush Script MT","Segoe Script",cursive;font-size:34px;color:#c18199;font-weight:400}
+.mock span{font-size:12px;letter-spacing:2px;color:#777}
+.form-wrap{max-width:760px;margin:auto;background:#fff;border:1px solid var(--line);border-radius:24px;padding:30px;box-shadow:0 12px 35px rgba(70,50,60,.06)}
+label{display:block;font-weight:700;font-size:13px;margin:15px 0 7px}
+input,select,textarea{width:100%;padding:13px 14px;border:1px solid #ddd2d8;border-radius:12px;font:inherit;background:#fff}
+textarea{min-height:120px;resize:vertical}
+.note{font-size:12px;color:#777;line-height:1.6}
+.faq{max-width:800px;margin:auto}
+details{border-bottom:1px solid var(--line);padding:18px 0}
+summary{cursor:pointer;font-weight:700}
+.footer{background:#fff5f8;border-top:1px solid var(--line);padding:45px 22px;text-align:center}
+.footer .logo{font-size:38px}
+@media(max-width:800px){
+ .nav-links{display:none}.hero h1{font-size:57px}
+ .cards,.portfolio{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}
+}
+@media(max-width:480px){.steps{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#home" class="logo">Socially Bloomed<small>SOCIAL MEDIA • CONTENT • GROWTH</small></a>
+    <div class="nav-links">
+      <a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#how">How It Works</a><a href="#order">Order</a><a href="#faq">FAQ</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <h1>Socially Bloomed<span>SOCIAL MEDIA • CONTENT • GROWTH</span></h1>
+  <p>Fresh, polished social-media content made to help small businesses show up online with confidence. ♡</p>
+  <a class="btn" href="#services">Shop Services →</a>
+  <a class="btn alt" href="#portfolio" style="margin-left:8px">View Portfolio</a>
+</header>
+
+<section class="section" id="services">
+  <h2>Services</h2>
+  <p class="sub">Choose the package that fits your business. Everything is created digitally and delivered through a private folder.</p>
+  <div class="cards">
+    <article class="card">
+      <h3>🌷 Bloom Starter</h3>
+      <div class="price">$50</div>
+      <ul><li>5 custom social posts</li><li>5 captions</li><li>10 content ideas</li><li>1-week posting plan</li><li>Digital delivery</li></ul>
+      <a class="btn" href="#order" onclick="selectService('Bloom Starter — $50')">Order Now</a>
+    </article>
+    <article class="card featured">
+      <h3>🎀 Bloom Monthly</h3>
+      <div class="price">$100/mo</div>
+      <ul><li>12 custom social posts</li><li>12 captions</li><li>20 content ideas</li><li>4-week content calendar</li><li>1 round of revisions</li></ul>
+      <a class="btn" href="#order" onclick="selectService('Bloom Monthly — $100/month')">Order Now</a>
+    </article>
+    <article class="card">
+      <h3>✨ Bloom Custom</h3>
+      <div class="price">From $10</div>
+      <ul><li>Individual Canva graphics</li><li>Short-form video edits</li><li>Promotional flyers</li><li>Custom content ideas</li><li>Made to order</li></ul>
+      <a class="btn" href="#order" onclick="selectService('Bloom Custom')">Order Now</a>
+    </article>
+  </div>
+</section>
+
+<section class="section" id="how" style="background:#fff9fb;max-width:none">
+  <div style="max-width:1100px;margin:auto">
+    <h2>How It Works</h2>
+    <p class="sub">Simple from start to finish.</p>
+    <div class="steps">
+      <div class="step"><div class="num">1</div><b>Choose</b><p>Pick your service.</p></div>
+      <div class="step"><div class="num">2</div><b>Order</b><p>Submit your details.</p></div>
+      <div class="step"><div class="num">3</div><b>Send</b><p>Upload your logo and media.</p></div>
+      <div class="step"><div class="num">4</div><b>Create</b><p>Your content is designed.</p></div>
+      <div class="step"><div class="num">5</div><b>Bloom</b><p>Download and post!</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="portfolio">
+  <h2>Portfolio</h2>
+  <p class="sub">Sample concepts for future clients. These are mock projects, not real client work.</p>
+  <div class="portfolio">
+    <div class="mock"><strong>New Set ♡</strong><span>NAIL STUDIO • SAMPLE</span></div>
+    <div class="mock"><strong>New Arrivals</strong><span>BOUTIQUE • SAMPLE</span></div>
+    <div class="mock"><strong>Try Our New Favorite</strong><span>CAFÉ • SAMPLE</span></div>
+  </div>
+</section>
+
+
+<section class="section" id="order" style="background:#fff9fb;max-width:none">
+  <div class="form-wrap">
+    <div id="checkout">
+      <h2>Place Your Order</h2>
+      <p class="sub" style="margin-bottom:20px">Choose your service, tell us what you need, then continue to secure checkout.</p>
+
+      <div id="step1">
+        <label for="service">1. Choose your service</label>
+        <select id="service" required>
+          <option value="">Choose a service…</option>
+          <option value="Bloom Starter" data-price="50">Bloom Starter — $50</option>
+          <option value="Bloom Monthly" data-price="100">Bloom Monthly — $100/month</option>
+          <option value="Bloom Custom" data-price="25">Bloom Custom — from $25</option>
+        </select>
+
+        <label for="business">2. Business name</label>
+        <input id="business" required placeholder="Your business name">
+
+        <label for="email">3. Business email</label>
+        <input id="email" type="email" required placeholder="you@business.com">
+
+        <label for="social">4. Instagram / TikTok</label>
+        <input id="social" placeholder="@yourbusiness">
+
+        <label for="goal">5. What would you like us to promote?</label>
+        <textarea id="goal" required placeholder="Tell us about your promotion, service, product, or goal."></textarea>
+
+        <label for="brand">6. Brand colors, style, or instructions</label>
+        <textarea id="brand" placeholder="Example: baby pink + white, clean and feminine…"></textarea>
+
+        <label for="files">7. Logo / photo / video links</label>
+        <textarea id="files" placeholder="Paste Google Drive/Dropbox links here."></textarea>
+
+        <button class="btn" type="button" style="width:100%;margin-top:18px" onclick="continueToPayment()">Continue to Checkout →</button>
+        <p id="formError" style="display:none;color:#b04f70;font-weight:700;margin-top:12px"></p>
+      </div>
+
+      <div id="step2" style="display:none">
+        <h3 style="font-family:Georgia,serif">Review your order ♡</h3>
+        <div id="orderSummary" style="background:#fff7fa;border:1px solid #f0dfe6;border-radius:16px;padding:18px;line-height:1.8"></div>
+        <button class="btn alt" type="button" style="margin-top:16px" onclick="backToForm()">← Edit Order</button>
+        <button class="btn" type="button" style="margin-top:16px;margin-left:8px" onclick="payNow()">Pay Securely →</button>
+        <p class="note" style="margin-top:18px">
+          Live payment is intentionally not connected in this starter file. A parent/guardian must connect the business's payment processor and paste the real checkout/payment-link URL here before accepting customers.
+        </p>
+      </div>
+
+      <div id="step3" style="display:none;text-align:center">
+        <div style="font-size:48px">🌷</div>
+        <h3 style="font-family:Georgia,serif;font-size:28px">Order received!</h3>
+        <p id="confirmationText" style="line-height:1.7"></p>
+        <div id="confirmationBox" style="background:#fff7fa;border:1px solid #f0dfe6;border-radius:16px;padding:18px;margin:18px 0;text-align:left"></div>
+        <p class="note">For the live version, this confirmation will be triggered only after the payment processor confirms payment, and an email service will send the customer their receipt/order confirmation automatically.</p>
+        <a class="btn" href="#home">Back to Socially Bloomed</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section" id="faq">
+  <h2>FAQ</h2>
+  <div class="faq">
+    <details><summary>How do I receive my content?</summary><p>Your finished files are delivered digitally through a private folder.</p></details>
+    <details><summary>Do you post for me?</summary><p>The starter packages are content-creation services. Posting/management can be added later as the business grows.</p></details>
+    <details><summary>Can I request changes?</summary><p>Bloom Monthly includes one round of revisions. Additional revisions can be added later with clear pricing.</p></details>
+    <details><summary>How long does an order take?</summary><p>The final live site should state a turnaround time you can consistently meet. Set this after you test how long your work takes.</p></details>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="logo">Socially Bloomed<small>SOCIAL MEDIA • CONTENT • GROWTH</small></div>
+  <p>Helping small businesses bloom online. ♡</p>
+  <p class="note">© 2026 Socially Bloomed. This is a starter website prototype. Live payments and automatic email confirmations must be connected before launch.</p>
+</footer>
+
+<script>
+let currentOrder = {};
+
+function selectService(value){
+  const select = document.getElementById('service');
+  for (const option of select.options) {
+    if (option.textContent.startsWith(value) || option.value === value) {
+      select.value = option.value;
+      break;
+    }
+  }
+}
+
+function continueToPayment(){
+  const service = document.getElementById('service');
+  const business = document.getElementById('business').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const goal = document.getElementById('goal').value.trim();
+  const error = document.getElementById('formError');
+
+  if (!service.value || !business || !email || !goal) {
+    error.textContent = 'Please complete the required fields before continuing.';
+    error.style.display = 'block';
+    return;
+  }
+
+  error.style.display = 'none';
+  const price = Number(service.options[service.selectedIndex].dataset.price || 25);
+
+  currentOrder = {
+    service: service.value,
+    price: price,
+    business,
+    email,
+    social: document.getElementById('social').value.trim(),
+    goal,
+    brand: document.getElementById('brand').value.trim(),
+    files: document.getElementById('files').value.trim(),
+    orderId: 'SB-' + Math.random().toString(36).slice(2, 8).toUpperCase()
+  };
+
+  document.getElementById('orderSummary').innerHTML =
+    '<strong>Service:</strong> ' + escapeHtml(currentOrder.service) + '<br>' +
+    '<strong>Price:</strong> $' + currentOrder.price.toFixed(2) + (currentOrder.service === 'Bloom Monthly' ? '/month' : '') + '<br>' +
+    '<strong>Business:</strong> ' + escapeHtml(currentOrder.business) + '<br>' +
+    '<strong>Email:</strong> ' + escapeHtml(currentOrder.email) + '<br>' +
+    '<strong>Order ID:</strong> ' + currentOrder.orderId;
+
+  document.getElementById('step1').style.display = 'none';
+  document.getElementById('step2').style.display = 'block';
+}
+
+function backToForm(){
+  document.getElementById('step2').style.display = 'none';
+  document.getElementById('step1').style.display = 'block';
+}
+
+function payNow(){
+  /*
+    LIVE SETUP:
+    Replace the next line with the payment-link URL supplied by the
+    parent/guardian's payment processor.
+
+    Example:
+    window.location.href = 'YOUR_PAYMENT_LINK_HERE';
+
+    Do NOT collect card numbers in this HTML page.
+  */
+  const paymentLink = ''; // Add the adult-managed payment link here.
+
+  if (paymentLink) {
+    localStorage.setItem('sociallyBloomedPendingOrder', JSON.stringify(currentOrder));
+    window.location.href = paymentLink;
+    return;
+  }
+
+  // Demo confirmation so the entire customer journey can be tested now.
+  showConfirmation();
+}
+
+function showConfirmation(){
+  document.getElementById('step2').style.display = 'none';
+  document.getElementById('step3').style.display = 'block';
+
+  document.getElementById('confirmationText').textContent =
+    'Thank you, ' + currentOrder.business + '! Your order request has been recorded for this website demo.';
+
+  document.getElementById('confirmationBox').innerHTML =
+    '<strong>Order ID:</strong> ' + currentOrder.orderId + '<br>' +
+    '<strong>Service:</strong> ' + escapeHtml(currentOrder.service) + '<br>' +
+    '<strong>Total:</strong> $' + currentOrder.price.toFixed(2) + '<br>' +
+    '<strong>Confirmation email:</strong> ' + escapeHtml(currentOrder.email);
+}
+
+function escapeHtml(value){
+  return String(value).replace(/[&<>"']/g, function(char){
+    return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[char];
+  });
+}
+</script>
+</body>
+</html>
